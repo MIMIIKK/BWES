@@ -48,26 +48,26 @@ const JobPost = () => {
   ];
 
   const cities = [
-    "Karachi",
-    "Lahore",
-    "Islamabad",
-    "Rawalpindi",
-    "Faisalabad",
-    "Multan",
-    "Hyderabad",
-    "Quetta",
-    "Peshawar",
-    "Sialkot",
-    "Gujranwala",
-    "Sargodha",
-    "Bahawalpur",
-    "Sukkur",
-    "Mardan",
-    "Mingora",
-    "Sheikhupura",
-    "Mandi Bahauddin",
-    "Larkana",
-    "Nawabshah",
+    "Kathmandu",
+    "Bhaktapur",
+    "Lalitpur",
+    "Bhairahawa",
+    "Butwal",
+    "Biratnagar",
+    "Tansen",
+    "Dharan",
+    "Dhankuta",
+    "Birendranagar",
+    "Birgunj",
+    "Pokhara",
+    "Nepalgunj",
+    "Damak",
+    "Hetauda",
+    "Janakpur",
+    "Kirtipur",
+    "Illam",
+    "Ghorahi",
+    "Kapilbastu",
   ];
 
   const { isAuthenticated, user } = useSelector((state) => state.user);
@@ -130,7 +130,7 @@ const JobPost = () => {
       <div>
         <label>Location (City)</label>
         <select value={location} onChange={(e) => setLocation(e.target.value)}>
-          <option value="">Select Job Type</option>
+          <option value="">Select Job City</option>
           {cities.map((element) => {
             return <option value={element}>{element}</option>;
           })}
@@ -201,7 +201,7 @@ const JobPost = () => {
           type="text"
           value={salary}
           onChange={(e) => setSalary(e.target.value)}
-          placeholder="50000 - 800000"
+          placeholder="Enter salary"
         />
       </div>
       <div>

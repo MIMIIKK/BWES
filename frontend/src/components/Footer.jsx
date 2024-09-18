@@ -20,8 +20,8 @@ const Footer = () => {
           <h4>Support</h4>
           <ul>
             <li>Janakinagar-02,Tilottama, Rupandehi</li>
-            <li>info@bwes.com</li>
-            <li>+977 1239967</li>
+            <li>bwes@gmail.com</li>
+            <li>+977 0394783</li>
           </ul>
         </div>
 
@@ -41,7 +41,19 @@ const Footer = () => {
             )}
           </ul>
         </div>
-        <div>
+       
+      </footer>
+      <div className="copyright">
+        &copy; CopyRight 2024. All Rights Reserved By BWES
+      </div>
+    </>
+  );
+};
+
+export default Footer;
+
+/* 
+ <div>
           <h4>Follow Us</h4>
           <ul>
             <li>
@@ -78,12 +90,5 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-      </footer>
-      <div className="copyright">
-        &copy; CopyRight 2024. All Rights Reserved By Better World Employment Service
-      </div>
-    </>
-  );
-};
 
-export default Footer;
+        */
